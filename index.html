@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Zihad Imtiase</title>
+  </head>
+  <body>
+    <!-- preload -->
+    <div id="preaload-sation">
+      <svg
+        class="pl"
+        viewBox="0 0 64 64"
+        width="64px"
+        height="64px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#000" />
+            <stop offset="100%" stop-color="#fff" />
+          </linearGradient>
+          <mask id="grad-mask">
+            <rect x="0" y="0" width="64" height="64" fill="url(#grad)" />
+          </mask>
+        </defs>
+        <circle
+          class="pl__ring"
+          cx="32"
+          cy="32"
+          r="26"
+          fill="none"
+          stroke="hsl(223,90%,55%)"
+          stroke-width="12"
+          stroke-dasharray="169.65 169.65"
+          stroke-dashoffset="-127.24"
+          stroke-linecap="round"
+          transform="rotate(135)"
+        />
+        <g fill="hsl(223,90%,55%)">
+          <circle
+            class="pl__ball1"
+            cx="32"
+            cy="45"
+            r="6"
+            transform="rotate(14)"
+          />
+          <circle
+            class="pl__ball2"
+            cx="32"
+            cy="48"
+            r="3"
+            transform="rotate(-21)"
+          />
+        </g>
+        <g mask="url(#grad-mask)">
+          <circle
+            class="pl__ring"
+            cx="32"
+            cy="32"
+            r="26"
+            fill="none"
+            stroke="hsl(283,90%,55%)"
+            stroke-width="12"
+            stroke-dasharray="169.65 169.65"
+            stroke-dashoffset="-127.24"
+            stroke-linecap="round"
+            transform="rotate(135)"
+          />
+          <g fill="hsl(283,90%,55%)">
+            <circle
+              class="pl__ball1"
+              cx="32"
+              cy="45"
+              r="6"
+              transform="rotate(14)"
+            />
+            <circle
+              class="pl__ball2"
+              cx="32"
+              cy="48"
+              r="3"
+              transform="rotate(-21)"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <!-- End-preload -->
+    <nav class="navbar navbar-expand-lg fixed-top d-none d-lg-block">
+      <!------------navbar------>
+      <div class="container">
+        <a class="navbar-brand" href="Front-page.html">ZD</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="Front-page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar fixed-top d-lg-none">
+      <div class="container">
+        <a class="navbar-brand" href="#">ZD</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Zihad Imtiase
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="Front-page.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!---------------------nav bar end------------>
+    <!-- herosection-start -->
+    <section class="herosection">
+      <div class="container">
+        <div class="pd-7">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left">
+                <div class="hero-title">
+                  <h1>HE</h1>
+                  <h1>LLO.</h1>
+                </div>
+                <div class="hero-scroll" id="about">
+                  <a href="#about"
+                    ><i class="fa-solid fa-caret-up"></i> Scroll Down</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right">
+                <img src="img/hero.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- herosection-end -->
+    <section class="aboutsetion mt-3 mb-5" id="about">
+      <!-----about me--------->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-4 text-center my-5">
+            <h1>About Me</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="abot-left title">
+              <img src="img/zd.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="about-right scroll left-wh-bar">
+              <div class="scroll-item">
+                <h2 class="mb-3">I'm Zihad Imtiase</h2>
+                <ul class="item">
+                  <li>
+                    <div class="bfr-icn">
+                      <div class="rounde">
+                        <p><i class="fa-solid fa-user-secret"></i></p>
+                      </div>
+                    </div>
+                    <p class="content-brbr ps-4">
+                      Hello there! I'm Full Stack Web Developer living in Dhaka,
+                      Cantonment, Bangladesh. I spend my days with my hands in
+                      many different areas of web development from back end
+                      programming (PHP, MySQL, Laravel) to front end development
+                      (HTML, CSS, Bootstrap, Tailwind, jQuery/Javascript and
+                      ReactJS). I'm extremely passionate about Web Development
+                      and Web Design in all it's forms and helping small
+                      businesses and artisans build and improve their online
+                      presence. Aside from Web Development, I also work with
+                      Python. Normally I do automation task by Python. But to be
+                      serious Python is my favourite programming language. My
+                      hobby is reading book for acquiring the general knowledge
+                      and religious knowledge.
+                    </p>
+                  </li>
+                </ul>
+                <ul class="icon">
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/zihad.imtiase.munna.2021"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/zihad_imtiase_munna/"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://web.whatsapp.com/"
+                      ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://join.skype.com/invite/x8Sbk01C6h7F"
+                      ><i class="fa-brands fa-skype"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="scroll-item">
+                <h2 class="mb-3">WORK EXPERIENCE</h2>
+                <ul class="item">
+                  <li>
+                    <div class="bfr-icn">
+                      <div class="rounde">
+                        <p><i class="fa-solid fa-suitcase"></i></p>
+                      </div>
+                    </div>
+                    <div class="content-brbr ps-4">
+                      <h4>Front-End Developer</h4>
+                      <p>
+                        At Freelancer : 2022 - Running <br />
+                        I have been working as a freelancer since 2022
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="scroll-item">
+                <h2 class="mb-3">Education</h2>
+                <ul class="item">
+                  <li>
+                    <div class="bfr-icn">
+                      <div class="rounde">
+                        <p><i class="fa-solid fa-graduation-cap"></i></p>
+                      </div>
+                    </div>
+                    <div class="content-brbr ps-4 mb-3">
+                      <h4>HSC</h4>
+                      <h5>Govt Bangobondhu Collage-Pallabi - 2020 - 2022</h5>
+                      <p>
+                        After my school life i have done my HSC examination at
+                        this college.
+                      </p>
+                    </div>
+                    <div class="content-brbr ps-4">
+                      <h4>SSC</h4>
+                      <h5>
+                        Adarsha Biddyaniketon, Manikdi, Dhaka Cantonment - 2009
+                        - 2020
+                      </h5>
+                      <p>
+                        This school was my first education institute. I have
+                        passed my most of the valueable time of my life in my
+                        school.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------ABOUT ME end---------->
+
+    <section class="servicesation">
+      <!----------resume---->
+      <div class="container">
+        <div class="pd-7">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1 class="service-head">My Services</h1>
+            </div>
+            <div class="col-md-4">
+              <div class="services-item text-center">
+                <div class="service-icon">
+                  <i class="fa-solid fa-brush"></i>
+                </div>
+                <div class="service-conntent">
+                  <h3>Front-End Development</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam facere porro voluptatibus tenetur ad reprehenderit modi
+                    ducimus consequatur alias? Iure maiores minima sapiente
+                    deserunt quo amet eaque, aperiam esse quasi?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="services-item text-center">
+                <div class="service-icon">
+                  <i class="fa-solid fa-brush"></i>
+                </div>
+                <div class="service-conntent">
+                  <h3>Responsive Design</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam facere porro voluptatibus tenetur ad reprehenderit modi
+                    ducimus consequatur alias? Iure maiores minima sapiente
+                    deserunt quo amet eaque, aperiam esse quasi?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="services-item text-center">
+                <div class="service-icon">
+                  <i class="fa-solid fa-brush"></i>
+                </div>
+                <div class="service-conntent">
+                  <h3>Web Design</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam facere porro voluptatibus tenetur ad reprehenderit modi
+                    ducimus consequatur alias? Iure maiores minima sapiente
+                    deserunt quo amet eaque, aperiam esse quasi?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------resumesation end------->
+    <section id="skill">
+      <div class="container">
+        <div class="skillsation pd-7">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="skill-head text-center">
+                <h1>Skill</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <!----------circle prgs----->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div
+                class="circuler-progres"
+                id="circuler-progres"
+                data-value="90"
+              >
+                <div class="progress-title">
+                  <p>HTML</p>
+                </div>
+                <span class="progress-value" id="progress-value">0%</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="circuler-progres" data-value="90">
+                <div class="progress-title">
+                  <p>HTML</p>
+                </div>
+                <span class="progress-value" id="progress-value1">0%</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="circuler-progres" data-value="100">
+                <div class="progress-title">
+                  <p>HTML</p>
+                </div>
+                <span class="progress-value" id="progress-value2">0%</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="circuler-progres" data-value="99">
+                <div class="progress-title">
+                  <p>HTML</p>
+                </div>
+                <span class="progress-value" id="progress-value3">0%</span>
+              </div>
+            </div>
+          </div>
+          <!-------end circle prgs--------->
+
+          <div class="row">
+            <!------line prgs-------->
+            <div class="col-lg-6">
+              <div class="line-progress" data-value="12">
+                <h3>
+                  <span class="float-start">HTML</span>
+                  <span class="float-end line-progress-value" data-value="82"
+                    >0%</span
+                  >
+                </h3>
+                <div class="progress-outline">
+                  <div class="progress-inline" data-value="82"></div>
+                </div>
+              </div>
+              <div class="line-progress" data-value="12">
+                <h3>
+                  <span class="float-start">HTML</span>
+                  <span class="float-end line-progress-value" data-value="82"
+                    >0%</span
+                  >
+                </h3>
+                <div class="progress-outline">
+                  <div class="progress-inline" data-value="82"></div>
+                </div>
+              </div>
+              <div class="line-progress" data-value="50">
+                <h3>
+                  <span class="float-start">HTML</span>
+                  <span class="float-end line-progress-value" data-value="82"
+                    >0%</span
+                  >
+                </h3>
+                <div class="progress-outline">
+                  <div class="progress-inline" data-value="82"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="line-progress" data-value="100">
+                <h3>
+                  <span class="float-start">HTML</span>
+                  <span class="float-end line-progress-value" data-value="82"
+                    >0%</span
+                  >
+                </h3>
+                <div class="progress-outline">
+                  <div class="progress-inline" data-value="82"></div>
+                </div>
+              </div>
+              <div class="line-progress">
+                <h3>
+                  <span class="float-start">HTML</span>
+                  <span class="float-end line-progress-value" data-value="82"
+                    >0%</span
+                  >
+                </h3>
+                <div class="progress-outline">
+                  <div class="progress-inline" data-value="82"></div>
+                </div>
+              </div>
+              <div class="line-progress">
+                <h3>
+                  <span class="float-start">HTML</span>
+                  <span class="float-end line-progress-value" data-value="82"
+                    >0%</span
+                  >
+                </h3>
+                <div class="progress-outline">
+                  <div class="progress-inline" data-value="82"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end-circulersation -->
+    <section class="portfoliosation" id="Portfolio">
+      <div class="container">
+        <div class="pd-7">
+          <!-- portfolio -->
+          <div class="row">
+            <div class="col-md-12 text-center mb-2">
+              <h1>Portfolio</h1>
+            </div>
+          </div>
+          <div class="portfolio mb-3">
+            <div class="row">
+              <nav class="gallery-filter">
+                <ul>
+                  <li class="filter-item portfolio-active" data-filter="all">
+                    All
+                  </li>
+                  <li class="filter-item" data-filter="ajiara">Ajiara</li>
+                  <li class="filter-item" data-filter="bedona">Bedona</li>
+                </ul>
+              </nav>
+            </div>
+            <!-- gallery item start -->
+            <div class="inner-portfolio">
+              <div class="row">
+                <div
+                  class="gallery-item col-md-3 all"
+                  onclick="togglePopup('popup-1')"
+                >
+                  <div
+                    class="card my-3 mx-2 overflow-hidden height"
+                    data-modal="modal1"
+                  >
+                    <div class="for-hover">
+                      <img
+                        src="img/ajaira.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="hover-item">
+                        <h1>Click here</h1>
+                        <span><i class="fa-solid fa-layer-group"></i></span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="gallery-item col-md-3 ajiara all"
+                  onclick="togglePopup('popup-2')"
+                >
+                  <div
+                    class="card my-3 mx-2 overflow-hidden height"
+                    data-modal="modal1"
+                  >
+                    <div class="for-hover">
+                      <img
+                        src="img/ajaira.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="hover-item">
+                        <h1>Click here</h1>
+                        <span><i class="fa-solid fa-layer-group"></i></span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <div
+                  class="gallery-item col-md-3 bedona all"
+                  onclick="togglePopup('popup-3')"
+                >
+                  <div class="card my-3 mx-2 overflow-hidden height">
+                    <div class="for-hover">
+                      <img src="img/hudai.jpg" class="card-img-top" alt="..." />
+                      <div class="hover-item">
+                        <h1>Click here</h1>
+                        <span><i class="fa-solid fa-layer-group"></i></span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <div
+                  class="gallery-item col-md-3 all"
+                  onclick="togglePopup('popup-4')"
+                >
+                  <div class="card my-3 mx-2 overflow-hidden height">
+                    <div class="for-hover">
+                      <img src="img/hudai.jpg" class="card-img-top" alt="..." />
+                      <div class="hover-item">
+                        <h1>Click here</h1>
+                        <span><i class="fa-solid fa-layer-group"></i></span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <div
+                  class="gallery-item col-md-3 all"
+                  onclick="togglePopup('popup-5')"
+                >
+                  <div class="card my-3 mx-2 overflow-hidden height">
+                    <div class="for-hover">
+                      <img
+                        src="img/b3dona.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="hover-item">
+                        <h1>Click here</h1>
+                        <span><i class="fa-solid fa-layer-group"></i></span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <div
+                  class="gallery-item col-md-3 ajiara all"
+                  onclick="togglePopup('popup-6')"
+                >
+                  <div class="card my-3 mx-2 overflow-hidden height">
+                    <div class="for-hover">
+                      <img
+                        src="img/ajaira.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="hover-item">
+                        <h1>Click here</h1>
+                        <span><i class="fa-solid fa-layer-group"></i></span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <div
+                  class="gallery-item col-md-3 bedona all"
+                  onclick="togglePopup('popup-7')"
+                >
+                  <div class="card my-3 mx-2 overflow-hidden height">
+                    <div class="for-hover">
+                      <img
+                        src="img/b3dona.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="hover-item">
+                        <h1>Click here</h1>
+                        <span><i class="fa-solid fa-layer-group"></i></span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <div
+                  class="gallery-item col-md-3 all"
+                  onclick="togglePopup('popup-8')"
+                >
+                  <div class="card my-3 mx-2 overflow-hidden height">
+                    <div class="for-hover">
+                      <img
+                        src="img/b3dona.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="hover-item">
+                        <h1>Click here</h1>
+                        <span><i class="fa-solid fa-layer-group"></i></span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page</h5>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
+              <!---row - end---->
+            </div>
+            <!-- Inner-portfolio-end -->
+          </div>
+        </div>
+        <!------pd-7 end------>
+      </div>
+    </section>
+
+    <section class="popups">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="popup" id="popup-1">
+              <div class="overlay">
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup('popup-1')">
+                    &times;
+                  </div>
+                  <div class="head">
+                    <div class="left">
+                      <h5>Client: Zihad</h5>
+                      <h5>Used: Bootstrap</h5>
+                    </div>
+                    <div class="right">
+                      <h5>Visit Site:<a href="#">wwwdaadad</a></h5>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="img/b3dona.jpg" alt="" />
+                  </div>
+                  <h1>ajaira projectt</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="popup" id="popup-2">
+              <div class="overlay">
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup('popup-2')">
+                    &times;
+                  </div>
+                  <div class="head">
+                    <div class="left">
+                      <h5>Client: Zihad</h5>
+                      <h5>Used: Bootstrap</h5>
+                    </div>
+                    <div class="right">
+                      <h5>Visit Site:<a href="#">wwwdaadad</a></h5>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="img/ajiara.png" alt="" />
+                  </div>
+                  <h1>ajaira projectt</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="popup" id="popup-3">
+              <div class="overlay">
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup('popup-3')">
+                    &times;
+                  </div>
+                  <div class="head">
+                    <div class="left">
+                      <h5>Client: Zihad</h5>
+                      <h5>Used: Bootstrap</h5>
+                    </div>
+                    <div class="right">
+                      <h5>Visit Site:<a href="#">wwwdaadad</a></h5>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="img/b3dona.jpg" alt="" />
+                  </div>
+                  <h1>ajaira projectt</h1>
+                </div>
+              </div>
+            </div>
+            <div class="popup" id="popup-4">
+              <div class="overlay">
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup('popup-4')">
+                    &times;
+                  </div>
+                  <div class="head">
+                    <div class="left">
+                      <h5>Client: Zihad</h5>
+                      <h5>Used: Bootstrap</h5>
+                    </div>
+                    <div class="right">
+                      <h5>Visit Site:<a href="#">wwwdaadad</a></h5>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="img/b3dona.jpg" alt="" />
+                  </div>
+                  <h1>ajaira projectt</h1>
+                </div>
+              </div>
+            </div>
+            <div class="popup" id="popup-5">
+              <div class="overlay">
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup('popup-5')">
+                    &times;
+                  </div>
+                  <div class="head">
+                    <div class="left">
+                      <h5>Client: Zihad</h5>
+                      <h5>Used: Bootstrap</h5>
+                    </div>
+                    <div class="right">
+                      <h5>Visit Site:<a href="#">wwwdaadad</a></h5>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="img/b3dona.jpg" alt="" />
+                  </div>
+                  <h1>ajaira projectt</h1>
+                </div>
+              </div>
+            </div>
+            <div class="popup" id="popup-6">
+              <div class="overlay">
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup('popup-6')">
+                    &times;
+                  </div>
+                  <div class="head">
+                    <div class="left">
+                      <h5>Client: Zihad</h5>
+                      <h5>Used: Bootstrap</h5>
+                    </div>
+                    <div class="right">
+                      <h5>Visit Site:<a href="#">wwwdaadad</a></h5>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="img/b3dona.jpg" alt="" />
+                  </div>
+                  <h1>ajaira projectt</h1>
+                </div>
+              </div>
+            </div>
+            <div class="popup" id="popup-7">
+              <div class="overlay">
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup('popup-7')">
+                    &times;
+                  </div>
+                  <div class="head">
+                    <div class="left">
+                      <h5>Client: Zihad</h5>
+                      <h5>Used: Bootstrap</h5>
+                    </div>
+                    <div class="right">
+                      <h5>Visit Site:<a href="#">wwwdaadad</a></h5>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="img/b3dona.jpg" alt="" />
+                  </div>
+                  <h1>ajaira projectt</h1>
+                </div>
+              </div>
+            </div>
+            <div class="popup" id="popup-8">
+              <div class="overlay">
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup('popup-8')">
+                    &times;
+                  </div>
+                  <div class="head">
+                    <div class="left">
+                      <h5>client name;zihaad imtiasae</h5>
+                      <h5>used; laraverl , daa, ajaira</h5>
+                    </div>
+                    <div class="right">
+                      <h5>ajaira <a href="#">adaad</a></h5>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="img/b3dona.jpg" alt="" />
+                  </div>
+                  <h1>ajaira projectt</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- slidersation -->
+    <section class="slidersation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb-2">
+            <h1>Our Reviews</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="testimonial">
+            <div class="testimonials"></div>
+            <div class="navigation"></div>
+            <div class="arrow-left">
+              <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="arrow-right">
+              <i class="fa fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end-sildersation -->
+
+    <!-- contact-start -->
+    <section class="contactsection" id="Contact">
+      <div class="container">
+        <div class="pd-7">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left">
+                <div class="row mb-3">
+                  <div class="col-4">
+                    <h5>Full Name:</h5>
+                  </div>
+                  <div class="col-7">
+                    <h4>Zihad Imtiase Munna</h4>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-4">
+                    <h5>Phone:</h5>
+                  </div>
+                  <div class="col-7">
+                    <h4>+880 1728964769</h4>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-4">
+                    <h5>Email:</h5>
+                  </div>
+                  <div class="col-7">
+                    <h4>zdimtiase@gmail.com</h4>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-4">
+                    <h5>Address:</h5>
+                  </div>
+                  <div class="col-7">
+                    <h4>Dhaka Cantonment, Dhaka-1206, Dhaka, Bangladesh</h4>
+                  </div>
+                </div>
+                <ul class="icon">
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/zihad.imtiase.munna.2021"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/zihad_imtiase_munna/"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://web.whatsapp.com/"
+                      ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://join.skype.com/invite/x8Sbk01C6h7F"
+                      ><i class="fa-brands fa-skype"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right">
+                <h1>Contact Me</h1>
+                <div class="row form-group">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="Your Full Name"
+                      name="name"
+                    />
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Your email address"
+                      name="email"
+                    />
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      id="subject"
+                      class="form-control"
+                      placeholder="Your subject for this message"
+                      name="email"
+                    />
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                      class="form-control"
+                      placeholder="Say something about us"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    class="btn custom"
+                    id="submitContact"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-end -->
+    <!-- footer-start -->
+    <footer class="footersection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>© 2022 Zihad Imtiasae Munna</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- scroll-btn-start -->
+    <div class="gototop js-top active">
+      <a href="#" class="js-gotop"
+        ><i class="fa-solid fa-jet-fighter-up"></i
+      ></a>
+    </div>
+    <!-- scroll-btn-end -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/zd.js"></script>
+  </body>
+</html>

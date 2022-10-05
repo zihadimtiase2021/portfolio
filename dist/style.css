@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.testimonial {
+  perspective-origin: 50% 50%;
+  perspective: 100em;
+  background: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 400px;
+  position: relative;
+  counter-reset: bubble 0;
+  overflow: hidden;
+}
+.testimonial::after {
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  content: "";
+}
+.testimonial .testimonials {
+  --rotation: 0deg;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  transform: translateY(calc(-50% + 140px)) translateZ(calc(var(--distance) * -1)) rotateY(var(--rotation));
+  transition: transform ease-in-out 1s;
+  transform-style: preserve-3d;
+}
+.testimonial .arrow-left,
+.testimonial .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  z-index: 2;
+  background: black;
+  padding: 5px;
+}
+.testimonial .arrow-left {
+  left: 0px;
+}
+.testimonial .arrow-right {
+  right: 0px;
+}
+.testimonial .navigation {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3px;
+  cursor: pointer;
+}
+.testimonial .navigation .nav-dot {
+  padding: 3px;
+  background: black;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.testimonial .navigation .focused {
+  background: white;
+}
+
+.chat-bubble {
+  padding: 2em;
+  width: 400px;
+  background-color: white;
+  border-radius: 1em;
+  position: absolute;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  transform: translateX(-50%) rotateY(var(--rotation)) translateZ(var(--distance));
+  transition: filter 1s ease;
+  box-shadow: 0 0 10px #0004;
+  backface-visibility: hidden;
+}
+.chat-bubble i {
+  font-size: 30px;
+  color: #aaa;
+  margin-bottom: 0.5em;
+}
+.chat-bubble .person {
+  display: grid;
+  grid-template: auto auto/auto 1fr;
+  grid-column-gap: 0.4em;
+  margin-top: 1em;
+}
+.chat-bubble .person .img {
+  grid-row: 1/-1;
+  border-radius: 50%;
+  width: 70px;
+}
+.chat-bubble .person .name {
+  font-weight: bold;
+  align-self: end;
+}
+.chat-bubble .person .role {
+  align-self: start;
+}

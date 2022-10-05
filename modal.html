@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Multiple Popup</title>
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
+        <h1>Title</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          aspernatur laborum rem sed laudantium excepturi veritatis voluptatum
+          architecto, dolore quaerat totam officiis nisi animi accusantium alias
+          inventore nulla atque debitis.
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="popup-2">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+        <h1>Title2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          aspernatur laborum rem sed laudantium excepturi veritatis voluptatum
+          architecto, dolore quaerat totam officiis nisi animi accusantium alias
+          inventore nulla atque debitis.
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="popup-3">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+        <h1>Title3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          aspernatur laborum rem sed laudantium excepturi veritatis voluptatum
+          architecto, dolore quaerat totam officiis nisi animi accusantium alias
+          inventore nulla atque debitis.
+        </p>
+      </div>
+    </div>
+
+    <button onclick="togglePopup('popup-1')">Show Popup 1</button>
+    <button onclick="togglePopup('popup-2')">Show Popup 2</button>
+    <button onclick="togglePopup('popup-3')">Show Popup 3</button>
+
+    <!-- partial -->
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

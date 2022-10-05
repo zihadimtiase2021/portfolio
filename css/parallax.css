@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', sans-serif;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(135deg, rgba(79,0,255,1) 0%, rgba(65,232,237,1) 100%);
+}
+
+header h1{
+    font-size: 4rem;
+}
+header h2{
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+a {
+    color: white;
+    margin: 1rem;
+}
+
+.wrapper{
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+}
+
+#about{
+    color: white;
+    background: black;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background: rgb(250, 249, 252);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.scroll{
+    width:50%;
+    color: white;
+}
+
+.scroll div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.scroll div > h2 {
+    width: 80%;
+    text-align: center;
+}
+
+.scroll div > p {
+    width: 80%;
+}
+
+.scroll div:nth-child(1){
+    background: #D83F87;
+}
+
+.scroll div:nth-child(2){
+    background: #4ABDAC;
+}
+
+.scroll div:nth-child(3){
+    background: #44318D;
+}
+
+footer{
+    min-height: 10vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
