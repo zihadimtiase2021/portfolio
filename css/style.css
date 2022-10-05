@@ -200,7 +200,7 @@ body {
 }
 /* herosection section*/
 .section {
-  background: linear-gradient(#000000, #ababab);
+  background: linear-gradient(#000000, #4a557278);
   overflow: hidden;
 }
 .sections {
@@ -231,15 +231,12 @@ body {
   pointer-events: none;
 }
 .sections img#moon {
-  filter: drop-shadow(rgba(238, 238, 238, 0.753) 0px 0px 12px);
+  filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.685));
 }
 .sections img#mountains_front {
   z-index: 10;
-  filter: grayscale(1);
 }
-.sections img#mountains_behind {
-  filter: grayscale(0.8);
-}
+
 #text {
   position: absolute;
   right: -350px;
