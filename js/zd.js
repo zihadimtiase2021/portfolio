@@ -19,13 +19,17 @@ window.addEventListener("scroll", function () {
   let value = window.scrollY;
   console.log(value);
   stars.style.left = value + 0.25 + "px";
-  //   if (window.outerWidth > 768) {
-  //     stars.style.left = value + 0.25 + "px";
-  //   }
+  // if (window.outerWidth > 768) {
+  //   stars.style.left = value + 0.25 + "px";
+  // }
   moon.style.top = value + 1.05 + "px";
   mountains_behind.style.top = value * 0.5 + "px";
   mountains_front.style.top = value * 0 + "px";
-  text.style.marginRight = value * 4 + "px";
+  if (window.outerWidth < 768) {
+    text.style.marginRight = value * 1.5 + "px";
+  } else {
+    text.style.marginRight = value * 4 + "px";
+  }
   text.style.marginTop = value * 1.5 + "px";
   btn.style.marginTop = value * 1.5 + "px";
 });
