@@ -200,8 +200,22 @@ body {
 }
 /* herosection section*/
 .section {
-  background: linear-gradient(#000000, #4a557278);
+  /* background: linear-gradient(#000000, #4a557278); */
   overflow: hidden;
+  background: linear-gradient(-45deg, #0c0c0c, #54586178, #0c0c0c, #54586178);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .sections {
   position: relative;
@@ -930,8 +944,7 @@ body {
   font-weight: 400;
   color: #aaa;
 }
-.contactsection .right {
-}
+
 .contactsection .right h1 {
   font-size: 35px;
   margin-bottom: 1.8rem;
