@@ -143,6 +143,10 @@ body {
   padding: 0;
   background-color: transparent;
 }
+.navbar-bg {
+  background-color: var(--text-color-dark);
+  border-bottom: 2px solid #000;
+}
 .navbar .navbar-brand {
   font-size: 25px;
   color: var(--text-color);
@@ -204,7 +208,7 @@ body {
   overflow: hidden;
   background: linear-gradient(-45deg, #0c0c0c, #54586178, #0c0c0c, #54586178);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 @keyframes gradient {
   0% {
@@ -246,6 +250,11 @@ body {
 }
 .sections img#moon {
   filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.685));
+}
+.nouvil {
+  position: absolute;
+  top: 100px;
+  font-size: 0px;
 }
 .sections img#mountains_front {
   z-index: 10;
@@ -982,10 +991,7 @@ body {
   font-size: 18px;
 }
 /* scroll btn */
-.gototop.active {
-  opacity: 1;
-  visibility: visible;
-}
+
 .gototop {
   position: fixed;
   bottom: 20px;
@@ -996,6 +1002,10 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+.vissable {
+  opacity: 1;
+  visibility: visible;
 }
 .gototop a {
   width: 50px;

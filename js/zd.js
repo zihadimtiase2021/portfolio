@@ -8,31 +8,73 @@
 })();
 //herosection
 
-let stars = document.getElementById("stars");
-let moon = document.getElementById("moon");
-let mountains_behind = document.getElementById("mountains_behind");
-let mountains_front = document.getElementById("mountains_front");
-let text = document.getElementById("text");
-let btn = document.getElementById("custom");
+(function herosection() {
+  let stars = document.getElementById("stars");
+  let moon = document.getElementById("moon");
+  let mountains_behind = document.getElementById("mountains_behind");
+  let mountains_front = document.getElementById("mountains_front");
+  let text = document.getElementById("text");
+  let btn = document.getElementById("custom");
+  let navbar = document.querySelector(".navbar");
+  let sidebar = document.querySelector(".sidebar");
+  let nouvil = document.querySelector(".nouvil");
+  let gototop = document.querySelector(".gototop");
 
-window.addEventListener("scroll", function () {
-  let value = window.scrollY;
-  console.log(value);
-  // stars.style.left = value + 0.25 + "px";
-  if (window.outerWidth > 768) {
-    stars.style.left = value + 0.25 + "px";
-  }
-  moon.style.top = value + 1.05 + "px";
-  mountains_behind.style.top = value * 0.5 + "px";
-  mountains_front.style.top = value * 0 + "px";
-  if (window.outerWidth < 768) {
-    text.style.marginRight = value * 1.5 + "px";
-  } else {
-    text.style.marginRight = value * 4 + "px";
-  }
-  text.style.marginTop = value * 1.5 + "px";
-  btn.style.marginTop = value * 1.5 + "px";
-});
+  window.addEventListener("scroll", function () {
+    const scrollHeight = window.pageYOffset;
+    const navHeight = navbar.getBoundingClientRect().height;
+    const sidebarHeight = sidebar.getBoundingClientRect().height;
+    if (scrollHeight > navHeight) {
+      navbar.classList.add("navbar-bg");
+    } else {
+      navbar.classList.remove("navbar-bg");
+    }
+    if (scrollHeight > sidebarHeight) {
+      sidebar.classList.add("navbar-bg");
+    } else {
+      sidebar.classList.remove("navbar-bg");
+    }
+
+    let value = window.scrollY;
+    console.log(value);
+    // stars.style.left = value + 0.25 + "px";
+    if (window.outerWidth > 768) {
+      stars.style.left = value + 0.25 + "px";
+    }
+    moon.style.top = value * 3 + "px";
+    mountains_behind.style.top = value * 0.5 + "px";
+    mountains_front.style.top = value * 0 + "px";
+    // if (window.outerWidth < 768) {
+    //   text.style.marginRight = value * 1.5 + "px";
+    // } else {
+    //   text.style.marginRight = value * 4 + "px";
+    // }
+    nouvil.style.fontSize = value + "px";
+    if (scrollY >= 40) {
+      nouvil.style.fontSize = 40 + "px";
+      nouvil.style.position = "fixed";
+      if (scrollY >= 460) {
+        nouvil.style.display = "none";
+      } else {
+        nouvil.style.display = "block";
+      }
+      //   if (scrollY >= 127) {
+      //     document.querySelector(".main").style.background =
+      //       "linear-gradient(#376281, #10001f)";
+      //   } else {
+      //     document.querySelector(".main").style.background =
+      //       "linear-gradient(to top, #111111, transparent)";
+      //   }
+    }
+    // text.style.marginTop = value * 1.5 + "px";
+    btn.style.marginTop = value * 1.5 + "px";
+    if (scrollHeight > 500) {
+      gototop.classList.add("vissable");
+    } else {
+      gototop.classList.remove("vissable");
+    }
+  });
+})();
 
 //skillsation function
 (function skillsation() {

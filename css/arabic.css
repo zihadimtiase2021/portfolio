@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  background: linear-gradient(#111111, #000e14);
+  height: 100vh;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to top, #111111, transparent);
+}
+.main img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#moon {
+  mix-blend-mode: screen;
+  transform: translateY(50px);
+}
+.nouvil {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  transform: translateY(-130px);
+}
+.content {
+  color: #fff;
+  padding: 30px;
+}
