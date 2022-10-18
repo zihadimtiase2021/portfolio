@@ -37,36 +37,23 @@
 
     let value = window.scrollY;
     console.log(value);
-    // stars.style.left = value + 0.25 + "px";
     if (window.outerWidth > 768) {
       stars.style.left = value + 0.25 + "px";
     }
     moon.style.top = value * 3 + "px";
     mountains_behind.style.top = value * 0.5 + "px";
     mountains_front.style.top = value * 0 + "px";
-    // if (window.outerWidth < 768) {
-    //   text.style.marginRight = value * 1.5 + "px";
-    // } else {
-    //   text.style.marginRight = value * 4 + "px";
-    // }
     nouvil.style.fontSize = value + "px";
+
     if (scrollY >= 40) {
-      nouvil.style.fontSize = 40 + "px";
+      nouvil.style.fontSize = 38 + "px";
       nouvil.style.position = "fixed";
-      if (scrollY >= 460) {
+      if (scrollY >= 470) {
         nouvil.style.display = "none";
       } else {
         nouvil.style.display = "block";
       }
-      //   if (scrollY >= 127) {
-      //     document.querySelector(".main").style.background =
-      //       "linear-gradient(#376281, #10001f)";
-      //   } else {
-      //     document.querySelector(".main").style.background =
-      //       "linear-gradient(to top, #111111, transparent)";
-      //   }
     }
-    // text.style.marginTop = value * 1.5 + "px";
     btn.style.marginTop = value * 1.5 + "px";
     if (scrollHeight > 500) {
       gototop.classList.add("vissable");
@@ -221,18 +208,6 @@
       img: "img/front-page.jpg",
     },
   ].slice(0, 8);
-
-  //   var template = `
-  // 	<div class='chat-bubble' style='--rotation:{rotation}deg'>
-  // 	  <i class='fa fa-quote-left'></i>
-  // 	  <div class='content'>{content}</div>
-  // 	  <div class='person'>
-  // 		<img class='slider-img' src='{img}'>
-  // 		<div class='name'>{name}</div>
-  // 		<div class='role'>{stars}</div>
-  // 	  </div>
-  // 	</div>
-  //   `;
 
   var template = `
       <div class='chat-bubble text-center' style='--rotation:{rotation}deg'>
