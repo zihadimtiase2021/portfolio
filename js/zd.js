@@ -332,3 +332,18 @@ filterContainer.addEventListener("click", (event) => {
 function togglePopup(idname) {
   document.getElementById(idname).classList.toggle("active");
 }
+
+// contact bind with email
+function sendMail() {
+  var params = {
+    from_name: document.getElementById("fullName").value,
+    emial_id: document.getElementById("email_id").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs
+    .send("service_6khzk5b", "template_aj1dnwh", params)
+    .then(function (res) {
+      alert("success" + res.status);
+    });
+}
