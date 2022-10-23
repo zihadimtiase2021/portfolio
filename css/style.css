@@ -9,6 +9,10 @@ body {
   font-family: "Space Mono", monospace;
   color: #ffff;
 }
+::selection {
+  color: #000;
+  background-color: #fff;
+}
 :root {
   --text-color: #fff;
   --text-color-dark: #111111;
@@ -878,17 +882,50 @@ body {
   margin-bottom: 1.8rem;
 }
 .contactsection .right .form-group {
+  position: relative;
   margin-bottom: 30px;
 }
 .form-control {
   background-color: transparent;
   border: 2px solid #aaa;
+  color: #fff;
 }
 .form-control:focus {
   color: #ffffff;
   background-color: transparent;
   border-color: #ffff;
   box-shadow: none;
+}
+.contactsection .right .form-group .icon-control {
+  position: relative;
+}
+.form-group .icon {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  visibility: hidden;
+}
+.contactsection .right .form-group.error .icon {
+  color: #e74c3c;
+  visibility: visible;
+}
+.form-group.error .form-control {
+  border-color: #e74c3c;
+}
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.contactsection .right .form-group small {
+  position: absolute;
+  color: #e74c3c;
+  visibility: hidden;
+}
+.contactsection .right .form-group.error small {
+  visibility: visible;
 }
 .contactsection .right .form-group .custom {
   background: #ffff;
@@ -967,4 +1004,11 @@ body {
   .popup .content {
     width: 90%;
   }
+}
+.emial-send {
+  visibility: hidden;
+}
+.emial-send.vissable {
+  visibility: visible;
+  opacity: 10;
 }

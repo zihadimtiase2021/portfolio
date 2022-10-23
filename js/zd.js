@@ -335,7 +335,7 @@ function togglePopup(idname) {
 
 // contact bind with email
 function sendMail() {
-  var params = {
+  let params = {
     from_name: document.getElementById("fullName").value,
     emial_id: document.getElementById("email_id").value,
     subject: document.getElementById("subject").value,
@@ -344,6 +344,92 @@ function sendMail() {
   emailjs
     .send("service_6khzk5b", "template_aj1dnwh", params)
     .then(function (res) {
-      alert("success" + res.status);
+      const vissable = document.querySelector(".emial-send");
+      vissable.classList.add("vissable");
+      // alert("success" + res.status);
     });
+}
+
+// validaattion
+const form = document.getElementById("form");
+const username = document.getElementById("fullName");
+const email = document.getElementById("email_id");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+const submit = document.getElementById("btn");
+
+// give condition for output
+submit.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  const usernameValue = username.value.trim();
+  const emailValue = email.value.trim();
+  const subjectValue = subject.value.trim();
+  const messageValue = message.value.trim();
+
+  checkValidation();
+
+  if (
+    !usernameValue ||
+    !emailValue ||
+    !subjectValue ||
+    !messageValue ||
+    !isEmail(emailValue)
+  ) {
+  } else {
+    sendMail();
+  }
+});
+
+// checking validation
+function checkValidation() {
+  const usernameValue = username.value.trim();
+  const emailValue = email.value.trim();
+  const subjectValue = subject.value.trim();
+  const messageValue = message.value.trim();
+
+  if (usernameValue === "") {
+    setErrorFor(username, "Username cannot be blank");
+  } else {
+    setSuccessFor(username);
+  }
+
+  if (emailValue === "") {
+    setErrorFor(email, "Username cannot be blank");
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(email, "Not a valid email");
+  } else {
+    setSuccessFor(email);
+  }
+
+  if (subjectValue === "") {
+    setErrorFor(subject, "subject cant not blank");
+  } else {
+    setSuccessFor(subject);
+  }
+
+  if (messageValue === "") {
+    setErrorFor(message, "message can not be blank");
+  } else {
+    setSuccessFor(message);
+  }
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  small.innerText = message;
+  console.log(small);
+  formControl.className = "form-group error";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "form-group";
+}
+
+function isEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
 }

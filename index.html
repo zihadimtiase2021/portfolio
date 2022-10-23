@@ -1007,65 +1007,81 @@
             </div>
             <div class="col-md-6">
               <div class="right">
-                <form>
+                <form id="form">
                   <h1>Contact Me</h1>
-                  <div class="row form-group">
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        id="fullName"
-                        class="form-control"
-                        placeholder="Your Full Name"
-                        name="name"
-                        required
-                      />
+                  <div class="row">
+                    <div class="col-md-6 icon-control">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          id="fullName"
+                          class="form-control"
+                          placeholder="Your Full Name"
+                          name="name"
+                          required
+                        />
+                        <i class="fa-solid fa-circle-exclamation icon"></i>
+                        <small>Error message</small>
+                      </div>
                     </div>
                   </div>
-                  <div class="row form-group">
-                    <div class="col-md-6">
-                      <input
-                        type="email_id"
-                        id="email_id"
-                        class="form-control"
-                        placeholder="Your email address"
-                        name="email"
-                        required
-                      />
+                  <div class="row">
+                    <div class="col-md-6 icon-control">
+                      <div class="form-group">
+                        <input
+                          type="email_id"
+                          id="email_id"
+                          class="form-control"
+                          placeholder="Your email address"
+                          name="email"
+                          required
+                        />
+                        <i class="fa-solid fa-circle-exclamation icon"></i>
+                        <small>Error message</small>
+                      </div>
                     </div>
                   </div>
-                  <div class="row form-group">
-                    <div class="col-md-12">
-                      <input
-                        type="text"
-                        id="subject"
-                        class="form-control"
-                        placeholder="Your subject for this message"
-                        name="email"
-                        required
-                      />
+                  <div class="row">
+                    <div class="col-md-12 icon-control">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          id="subject"
+                          class="form-control"
+                          placeholder="Your subject for this message"
+                          name="email"
+                          required
+                        />
+                        <i class="fa-solid fa-circle-exclamation icon"></i>
+                        <small>Error message</small>
+                      </div>
                     </div>
                   </div>
-                  <div class="row form-group">
-                    <div class="col-md-12">
-                      <textarea
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="10"
-                        class="form-control"
-                        placeholder="Say something about us"
-                        required
-                      ></textarea>
+                  <div class="row">
+                    <div class="col-md-12 icon-control">
+                      <div class="form-group">
+                        <textarea
+                          name="message"
+                          id="message"
+                          cols="30"
+                          rows="10"
+                          class="form-control"
+                          placeholder="Say something about us"
+                          required
+                        ></textarea>
+                        <i class="fa-solid fa-circle-exclamation icon"></i>
+                        <small>Error message</small>
+                      </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <button
-                      type="button"
-                      class="btn custom"
-                      onclick="sendMail()"
-                    >
+                    <button type="button" class="btn custom" id="btn">
+                      <!-- onclick="sendMail()" -->
                       Send Message
                     </button>
+                  </div>
+                  <div class="text-center mb-2">
+                    <p class="my-0 emial-send">Email Send Successful</p>
                   </div>
                 </form>
               </div>
