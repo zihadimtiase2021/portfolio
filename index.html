@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- scroll-slider-css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Zihad Imtiase</title>
@@ -91,75 +93,24 @@
       </svg>
     </div>
     <!-- End-preload -->
-    <nav class="navbar navbar-expand-lg fixed-top d-none d-lg-block">
-      <!------------navbar------>
-      <div class="container">
-        <a class="navbar-brand" href="#">ZD Imtiase</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skill">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <nav class="navbar sidebar fixed-top d-lg-none">
-      <div class="container">
-        <a class="navbar-brand" href="#">ZD</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Zihad Imtiase
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul
-              class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center"
-            >
+    <header data-aos="fade-zoom-in" data-aos-delay="50" data-aos-offset="0">
+      <nav class="navbar navbar-expand-lg fixed-top d-none d-lg-block">
+        <!------------navbar------>
+        <div class="container">
+          <a class="navbar-brand" href="#">ZD Imtiase</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
               <li class="nav-item">
                 <a class="nav-link" href="#home">Home</a>
               </li>
@@ -178,40 +129,97 @@
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
-    <!---------------------nav bar end------------>
-    <!-- herosection-start -->
-    <section class="section" id="home">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 p-0">
-            <div class="sections">
-              <img src="img/stars.png" id="stars" alt="" />
-              <img src="img/heroFour.png" id="moon" alt="" />
-              <img
-                src="img/mountains_behind.png"
-                id="mountains_behind"
-                alt=""
-              />
-              <h1 class="nouvil">Zihad Imtiase</h1>
-              <!-- <h2 id="text">Zihad Imtise</h2> -->
-              <div class="text-animention custom" id="custom">
-                <div class="words text-center">
-                  <span></span>
-                  <span>Front-End Developer</span>
-                  <span>Web Designer</span>
-                  <span>Photographer</span>
-                </div>
-              </div>
-              <img src="img/mountains_front.png" id="mountains_front" alt="" />
+      </nav>
+      <nav class="navbar sidebar fixed-top d-lg-none">
+        <div class="container">
+          <a class="navbar-brand" href="#">ZD</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Zihad Imtiase
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skill">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- herosection-end -->
-    <section class="aboutsetion sec mt-3 mb-5" id="about">
+      </nav>
+      <!---------------------nav bar end------------>
+      <!-- herosection-start -->
+      <section class="section" id="home">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <div class="sections">
+                <img src="img/stars.png" id="stars" alt="" />
+                <img src="img/heroFour.png" id="moon" alt="" />
+                <img
+                  src="img/mountains_behind.png"
+                  id="mountains_behind"
+                  alt=""
+                />
+                <h1 class="nouvil">Zihad Imtiase</h1>
+                <!-- <h2 id="text">Zihad Imtise</h2> -->
+                <div class="text-animention custom" id="custom">
+                  <div class="words text-center">
+                    <span></span>
+                    <span>Front-End Developer</span>
+                    <span>Web Designer</span>
+                    <span>Photographer</span>
+                  </div>
+                </div>
+                <img
+                  src="img/mountains_front.png"
+                  id="mountains_front"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- herosection-end -->
+    </header>
+    <section class="aboutsetion sec mt-3 mb-5" id="about" data-aos="fade-up">
       <!-----about me--------->
       <div class="container">
         <div class="row">
@@ -228,7 +236,7 @@
 
           <div class="col-md-8">
             <div class="about-right scroll left-wh-bar">
-              <div class="scroll-item">
+              <div class="scroll-item" data-aos="fade-up">
                 <h2 class="mb-3">I'm Zihad Imtiase</h2>
                 <ul class="item">
                   <li>
@@ -271,7 +279,7 @@
                 </ul>
               </div>
 
-              <div class="scroll-item">
+              <div class="scroll-item" data-aos="fade-up">
                 <h2 class="mb-3">WORK EXPERIENCE</h2>
                 <ul class="item">
                   <li>
@@ -291,7 +299,7 @@
                 </ul>
               </div>
 
-              <div class="scroll-item">
+              <div class="scroll-item" data-aos="fade-up">
                 <h2 class="mb-3">Education</h2>
                 <ul class="item">
                   <li>
@@ -300,7 +308,7 @@
                         <p><i class="fa-solid fa-graduation-cap"></i></p>
                       </div>
                     </div>
-                    <div class="content-brbr ps-4 mb-3">
+                    <div class="content-brbr ps-4 mb-3" data-aos="fade-up">
                       <h4>HSC</h4>
                       <h5>Govt Bangobondhu Collage-Pallabi - 2020 - 2022</h5>
                       <p>
@@ -308,7 +316,7 @@
                         this college.
                       </p>
                     </div>
-                    <div class="content-brbr ps-4">
+                    <div class="content-brbr ps-4" data-aos="fade-up">
                       <h4>SSC</h4>
                       <h5>
                         Adarsha Biddyaniketon, Manikdi, Dhaka Cantonment - 2009
@@ -330,7 +338,7 @@
     </section>
     <!-------------ABOUT ME end---------->
 
-    <section class="servicesation">
+    <section class="servicesation" data-aos="fade-up" data-aos-offset="200">
       <!----------resume---->
       <div class="container">
         <div class="pd-7">
@@ -338,7 +346,7 @@
             <div class="col-md-12 text-center">
               <h1 class="service-head">My Services</h1>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-offset="200">
               <div class="services-item text-center mb-3">
                 <div class="service-icon">
                   <i class="fa-solid fa-brush"></i>
@@ -355,7 +363,7 @@
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-offset="200">
               <div class="services-item text-center mb-3">
                 <div class="service-icon">
                   <i class="fa-solid fa-brush"></i>
@@ -372,7 +380,7 @@
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-offset="200">
               <div class="services-item text-center mb-3">
                 <div class="service-icon">
                   <i class="fa-solid fa-brush"></i>
@@ -393,7 +401,7 @@
       </div>
     </section>
     <!----------resumesation end------->
-    <section id="skill">
+    <section id="skill" data-aos="fade-up" data-aos-offset="200">
       <div class="container">
         <div class="skillsation pd-7">
           <div class="row">
@@ -524,7 +532,12 @@
       </div>
     </section>
     <!-- end-circulersation -->
-    <section class="portfoliosation" id="Portfolio">
+    <section
+      class="portfoliosation"
+      id="Portfolio"
+      data-aos="fade-up"
+      data-aos-offset="200"
+    >
       <div class="container">
         <div class="pd-7">
           <!-- portfolio -->
@@ -533,7 +546,7 @@
               <h1>Portfolio</h1>
             </div>
           </div>
-          <div class="portfolio mb-3">
+          <div class="portfolio mb-3" data-aos="fade-up" data-aos-offset="200">
             <div class="row">
               <nav class="gallery-filter">
                 <ul>
@@ -921,7 +934,12 @@
 
     <!-- slidersation -->
     <section class="slidersation">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-offset="150"
+        data-aos-delay="200"
+      >
         <div class="row">
           <div class="col-md-12 text-center mb-2">
             <h1>Our Reviews</h1>
@@ -944,7 +962,12 @@
     <!-- end-sildersation -->
 
     <!-- contact-start -->
-    <section class="contactsection" id="Contact">
+    <section
+      class="contactsection"
+      id="Contact"
+      data-aos="fade-up"
+      data-aos-offset="200"
+    >
       <div class="container">
         <div class="pd-7 pb-2">
           <div class="row">
@@ -1123,6 +1146,15 @@
         // https://dashboard.emailjs.com/admin/account
         emailjs.init("178vY5zcTqMAiVnuC");
       })();
+    </script>
+    <!-- scroll-slider-js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+        once: false,
+      });
     </script>
     <!-- main-js -->
     <script src="js/zd.js"></script>

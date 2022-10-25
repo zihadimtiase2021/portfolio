@@ -601,6 +601,7 @@ body {
   padding: 1px 10px;
   margin: 0px 10px;
   position: relative;
+  cursor: pointer;
 }
 .gallery-filter ul li::before {
   content: "";
@@ -875,7 +876,7 @@ body {
 .contactsection .left h4 {
   font-size: 18px;
   font-weight: 400;
-  color: #aaa;
+  color: #ffffffd1;
 }
 .contactsection .right h1 {
   font-size: 35px;

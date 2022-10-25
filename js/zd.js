@@ -89,7 +89,10 @@
     }, 10);
   });
 
+  console.log(scrollY);
+
   // // lineProgress text change effect
+
   let lineProgress = document.querySelectorAll(".line-progress-value");
 
   lineProgress.forEach((text) => {
@@ -131,7 +134,7 @@
   const testimonials = [
     {
       content:
-        "Zahan helped out spontaneously when a project got delayed. he managed to solve the task very efficiently and professional. I am looking forward to work with him on future tasks.",
+        "Zihad helped out spontaneously when a project got delayed. he managed to solve the task very efficiently and professional. I am looking forward to work with him on future tasks.",
       name: "Felix W.",
       stars: `<div class="stars">
       <i class="fa-solid fa-star"></i>
@@ -144,8 +147,8 @@
     },
     {
       content:
-        "Id leo in vitae turpis. Libero nunc consequat interdum varius. ",
-      name: "John Doe",
+        " ZD is great to work with. He responds fairly quickly and is able to take a mockup and make it a mobile responsive reality. He is fast to support the work afterwards with change request. Highly recommend.",
+      name: "Hunter T.",
       stars: `<div class="stars">
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
@@ -153,7 +156,7 @@
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
         </div>`,
-      img: "img/zihad.jpg",
+      img: "img/hunter.webp",
     },
     {
       content:
