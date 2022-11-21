@@ -131,8 +131,13 @@ body {
   background-color: transparent;
 }
 .navbar-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: var(--text-color-dark);
   border-bottom: 2px solid #000;
+  z-index: 99999;
 }
 .navbar .navbar-brand {
   font-size: 25px;

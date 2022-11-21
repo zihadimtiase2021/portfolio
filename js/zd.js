@@ -36,7 +36,6 @@
     }
 
     let value = window.scrollY;
-    console.log(value);
     if (window.outerWidth > 768) {
       stars.style.left = value + 0.25 + "px";
     }
@@ -64,7 +63,7 @@
 })();
 
 //skillsation function
-(function skillsation() {
+function skillsation() {
   //circuler progress effect
   const circProgress = document.querySelectorAll(".circuler-progres");
 
@@ -88,8 +87,6 @@
       }
     }, 10);
   });
-
-  console.log(scrollY);
 
   // // lineProgress text change effect
 
@@ -127,7 +124,24 @@
       }
     }, 10);
   });
-})();
+}
+
+const skillsection = document.getElementById("skill");
+
+let called = false;
+document.addEventListener("scroll", (e) => {
+  const sectionHeight = skillsection.getBoundingClientRect().height;
+  console.log("sectionHeight");
+  if (document.documentElement.scrollTop >= 500) {
+    if (called) return;
+    called = true;
+  }
+});
+
+function calledEvent() {
+  console.log("hello");
+  alert("hello");
+}
 
 // testimonialsation function
 (function testimonialsation() {
@@ -160,8 +174,8 @@
     },
     {
       content:
-        "Id leo in vitae turpis. Libero nunc consequat interdum varius. Eget mauris pharetra et ultrices neque ornare aenean euismod. Donec ac odio tempor orci. Iaculis nunc sed augue lacus viverra vitae congue.",
-      name: "John Doe",
+        "Zihad is a fast working, reliable frontend developer with good problem-solving skills. Do not hasitate to work with him",
+      name: "Felix W.",
       stars: `<div class="stars">
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
@@ -169,7 +183,7 @@
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
         </div>`,
-      img: "img/front-page.jpg",
+      img: "img/felix.png",
     },
     {
       content:
