@@ -126,22 +126,31 @@ function skillsation() {
   });
 }
 
-const skillsection = document.getElementById("skill");
+const fullBodyHeight = document.body.getBoundingClientRect().height;
+
+const skillSectionHeight = document
+  .getElementById("skill")
+  .getBoundingClientRect().height;
+
+const prH = document.getElementById("Portfolio").getBoundingClientRect().height;
+const slH = document
+  .getElementById("slidersation")
+  .getBoundingClientRect().height;
+const cntH = document.getElementById("Contact").getBoundingClientRect().height;
+
+const bottomThreeSectionHeight = prH + slH + cntH;
+
+const countedHeight =
+  fullBodyHeight - skillSectionHeight - bottomThreeSectionHeight;
 
 let called = false;
-document.addEventListener("scroll", (e) => {
-  const sectionHeight = skillsection.getBoundingClientRect().height;
-  console.log("sectionHeight");
-  if (document.documentElement.scrollTop >= 500) {
+window.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop >= countedHeight - 200) {
     if (called) return;
     called = true;
+    skillsation();
   }
 });
-
-function calledEvent() {
-  console.log("hello");
-  alert("hello");
-}
 
 // testimonialsation function
 (function testimonialsation() {
