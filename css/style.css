@@ -471,7 +471,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: conic-gradient(#fff 3.6deg, #111111 0deg);
+  background: conic-gradient(#ffffff38 0deg, #36363640 0);
   margin: 0 auto;
 }
 .circuler-progres::before {
@@ -727,17 +727,11 @@ body {
   transform: translate(-50%, -50%) scale(1);
 }
 .popups .head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 .popups .head .left {
   text-align: left;
-}
-.popups .head .right {
-  text-align: right;
 }
 .popups .head h5 {
   font-size: 16px;
