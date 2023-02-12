@@ -135,9 +135,10 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--text-color-dark);
-  border-bottom: 2px solid #000;
+  background-color: #000000ad;
+  border-bottom: 1px solid #222;
   z-index: 99999;
+  backdrop-filter: blur(10px);
 }
 .navbar .navbar-brand {
   font-size: 25px;
