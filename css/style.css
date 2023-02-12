@@ -135,7 +135,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000000ad;
+  background-color: #111111ad;
   border-bottom: 1px solid #222;
   z-index: 99999;
   backdrop-filter: blur(10px);
