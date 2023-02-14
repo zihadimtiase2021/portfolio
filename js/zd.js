@@ -459,3 +459,7 @@ function isEmail(email) {
     email
   );
 }
+
+// copy right edit
+const copyRightEl = document.querySelector(".copy-right");
+copyRightEl.innerText = `© ${new Date().getFullYear()}  Zihad Imtiasae Munna`;

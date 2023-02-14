@@ -254,11 +254,16 @@
       </section>
       <!-- herosection-end -->
     </header>
-    <section class="aboutsetion sec mt-3 mb-5" id="about" data-aos="fade-up">
+    <section class="aboutsetion sec mt-3 mb-5" id="about">
       <!-----about me--------->
       <div class="container">
         <div class="row">
-          <div class="col-md-8 offset-md-4 text-center my-5">
+          <div
+            class="col-md-8 offset-md-4 text-center my-5"
+            data-aos="zoom-in-up"
+            data-aos-offset="200"
+            data-aos-duration="200"
+          >
             <h1>About Me</h1>
           </div>
         </div>
@@ -373,12 +378,18 @@
     </section>
     <!-------------ABOUT ME end---------->
 
-    <section class="servicesation" data-aos="fade-up" data-aos-offset="200">
+    <section class="servicesation">
       <!----------resume---->
       <div class="container">
         <div class="pd-7">
           <div class="row">
-            <div class="col-md-12 text-center">
+            <div
+              class="col-md-12 text-center"
+              class="col-md-8 offset-md-4 text-center my-5"
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="200"
+            >
               <h1 class="service-head">My Services</h1>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-offset="200">
@@ -436,17 +447,22 @@
       </div>
     </section>
     <!----------resumesation end------->
-    <section id="skill" data-aos="fade-up" data-aos-offset="200">
+    <section id="skill">
       <div class="container">
         <div class="skillsation pd-7">
           <div class="row">
-            <div class="col-md-12">
+            <div
+              class="col-md-12"
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="200"
+            >
               <div class="skill-head text-center">
                 <h1>Skill</h1>
               </div>
             </div>
           </div>
-          <div class="row mb-5">
+          <div class="row mb-5" data-aos="fade-up" data-aos-offset="200">
             <!----------circle prgs----->
             <div class="col-lg-3 col-md-6 mb-4">
               <div
@@ -567,17 +583,17 @@
       </div>
     </section>
     <!-- end-circulersation -->
-    <section
-      class="portfoliosation"
-      id="Portfolio"
-      data-aos="fade-up"
-      data-aos-offset="200"
-    >
+    <section class="portfoliosation" id="Portfolio">
       <div class="container">
         <div class="pd-7">
           <!-- portfolio -->
           <div class="row">
-            <div class="col-md-12 text-center mb-2">
+            <div
+              class="col-md-12 text-center mb-2"
+              data-aos="zoom-in-up"
+              data-aos-offset="200"
+              data-aos-duration="200"
+            >
               <h1>Portfolio</h1>
             </div>
           </div>
@@ -985,18 +1001,18 @@
 
     <!-- slidersation -->
     <section class="slidersation" id="slidersation">
-      <div
-        class="container"
-        data-aos="fade-up"
-        data-aos-offset="150"
-        data-aos-delay="200"
-      >
+      <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center mb-2">
+          <div
+            class="col-md-12 text-center mb-2"
+            data-aos="zoom-in-up"
+            data-aos-offset="200"
+            data-aos-duration="200"
+          >
             <h1>Our Reviews</h1>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-offset="200">
           <div class="testimonial pb-3">
             <div class="testimonials"></div>
             <div class="navigation"></div>
@@ -1009,16 +1025,26 @@
           </div>
           <div class="col-12">
             <div class="text-center pb-5">
-              <h1 class="mb-4">Hire Me!</h1>
-              <p class="mb-4">
-                Usually I work in freelancer marketplace. You can hire me there.
-              </p>
-              <a
-                target="_blank"
-                href="https://www.freelancer.com.bd/u/nurzahanbegum2"
-                class="btn btn-light fw-semibold"
-                >Hire me</a
+              <h1
+                class="mb-4"
+                data-aos="zoom-in-up"
+                data-aos-offset="200"
+                data-aos-duration="200"
               >
+                Hire Me!
+              </h1>
+              <div data-aos="fade-up" data-aos-offset="200">
+                <p class="mb-4">
+                  Usually I work in freelancer marketplace. You can hire me
+                  there.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://www.freelancer.com.bd/u/nurzahanbegum2"
+                  class="btn btn-light fw-semibold"
+                  >Hire me</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -1184,7 +1210,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <p>© 2022 Zihad Imtiasae Munna</p>
+            <p class="copy-right"></p>
           </div>
         </div>
       </div>
@@ -1218,7 +1244,7 @@
       AOS.init({
         offset: 300,
         duration: 800,
-        once: true,
+        once: false,
       });
     </script>
     <!-- main-js -->
