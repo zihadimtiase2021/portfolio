@@ -166,7 +166,7 @@ window.addEventListener("scroll", () => {
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
         </div>`,
-      img: "img/felix.png",
+      img: "img/felix.webp",
     },
     {
       content:
