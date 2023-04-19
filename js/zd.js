@@ -67,7 +67,7 @@ function skillsation() {
   //circuler progress effect
   const circProgress = document.querySelectorAll(".circuler-progres");
 
-  circProgress.forEach((parentElem) => {
+  circProgress.forEach(parentElem => {
     let circulerStartValue = 0;
     let progress_value = 0;
 
@@ -92,7 +92,7 @@ function skillsation() {
 
   let lineProgress = document.querySelectorAll(".line-progress-value");
 
-  lineProgress.forEach((text) => {
+  lineProgress.forEach(text => {
     let lineTextEndValue = text.getAttribute("data-value");
     let lineTextStartValue = 0;
     let lineProgressTextIntervel = setInterval(() => {
@@ -110,7 +110,7 @@ function skillsation() {
 
   let progressInline = document.querySelectorAll(".progress-inline");
 
-  progressInline.forEach((line) => {
+  progressInline.forEach(line => {
     let progressLineEndValue = line.getAttribute("data-value");
     let progresLineStartValue = 0;
 
@@ -332,7 +332,7 @@ window.addEventListener("scroll", () => {
 const filterContainer = document.querySelector(".gallery-filter");
 const galleryItems = document.querySelectorAll(".gallery-item");
 
-filterContainer.addEventListener("click", (event) => {
+filterContainer.addEventListener("click", event => {
   if (event.target.classList.contains("filter-item")) {
     //remove exsist active class
     filterContainer
@@ -342,7 +342,7 @@ filterContainer.addEventListener("click", (event) => {
     event.target.classList.add("portfolio-active");
     //image filter
     const filterValue = event.target.getAttribute("data-filter");
-    galleryItems.forEach((item) => {
+    galleryItems.forEach(item => {
       if (item.classList.contains(filterValue)) {
         item.classList.remove("hide");
         item.classList.add("show");
@@ -385,7 +385,7 @@ const message = document.getElementById("message");
 const submit = document.getElementById("btn");
 
 // give condition for output
-submit.addEventListener("click", (e) => {
+submit.addEventListener("click", e => {
   e.preventDefault();
 
   const usernameValue = username.value.trim();
